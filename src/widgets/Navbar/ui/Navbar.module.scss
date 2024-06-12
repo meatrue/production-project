@@ -1,0 +1,20 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--navbar-height);
+    padding: 20px;
+    background-color: var(--inverted-bg-color);
+}
+
+.switchersWrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
