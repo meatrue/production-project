@@ -12,7 +12,7 @@ export const buildLoaders = ({ isDev }: BuildOptions): RuleSetRule[] => {
             },
         ],
     };
-    
+
     const svgLoader = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
@@ -25,17 +25,17 @@ export const buildLoaders = ({ isDev }: BuildOptions): RuleSetRule[] => {
             loader: 'babel-loader',
             options: {
                 presets: ['@babel/preset-env'],
-                'plugins': [
+                plugins: [
                     [
                         'i18next-extract',
                         {
                             locales: ['ru', 'en'],
                             keyAsDefaultValue: true,
-                        }
+                        },
                     ],
-                ]
-            }
-        }
+                ],
+            },
+        },
     };
 
     const typescriptLoader = {
@@ -51,7 +51,7 @@ export const buildLoaders = ({ isDev }: BuildOptions): RuleSetRule[] => {
                 ? 'style-loader'
                 : MiniCssExtractPlugin.loader,
             {
-                loader: "css-loader",
+                loader: 'css-loader',
                 options: {
                     modules: {
                         auto: (resPath: string) => Boolean(resPath.includes('.module.')),
@@ -61,7 +61,7 @@ export const buildLoaders = ({ isDev }: BuildOptions): RuleSetRule[] => {
                     },
                 },
             },
-            "sass-loader",
+            'sass-loader',
         ],
     };
 
@@ -71,5 +71,5 @@ export const buildLoaders = ({ isDev }: BuildOptions): RuleSetRule[] => {
         babelLoader,
         typescriptLoader,
         cssLoader,
-    ]
+    ];
 };

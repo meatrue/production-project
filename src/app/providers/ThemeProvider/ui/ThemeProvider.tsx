@@ -9,7 +9,7 @@ export const ThemeProvider: React.FC = ({ children }) => {
 
     const themeProps = React.useMemo(() => ({
         theme,
-        setTheme
+        setTheme,
     }), [theme]);
 
     return (

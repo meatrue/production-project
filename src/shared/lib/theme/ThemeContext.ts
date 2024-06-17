@@ -1,9 +1,9 @@
-import { createContext } from 'react';
+import React, { createContext } from 'react';
 
 export enum Theme {
     LIGHT = 'light',
     DARK = 'dark',
-};
+}
 
 export interface ThemeContextProps {
     theme?: Theme;
