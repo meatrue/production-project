@@ -18,7 +18,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
         className,
     } = props;
 
-    const { t } = useTranslation('about');
+    const { t } = useTranslation();
 
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
 
             <div className={cls.links}>
                 <AppLink to="/" theme={AppLinkTheme.SECONDARY}>
-                    {t('Главная')}
+                    {t('Главная страница')}
                 </AppLink>
                 <AppLink to="/about" theme={AppLinkTheme.SECONDARY}>
                     {t('О сайте')}
