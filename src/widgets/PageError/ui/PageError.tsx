@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib';
 import { Button } from 'shared/ui';
 
+import 'app/styles/index.scss';
 import cls from './PageError.module.scss';
 
 interface PageErrorProps {
