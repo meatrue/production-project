@@ -3,6 +3,7 @@ import React from 'react';
 import { classNames } from 'shared/lib';
 import { Button } from 'shared/ui';
 
+import { useTranslation } from 'react-i18next';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -11,6 +12,8 @@ interface SidebarProps {
 
 export const Sidebar: React.FC<SidebarProps> = (props) => {
     const { className } = props;
+
+    const { t } = useTranslation();
 
     const [collapsed, setCollapsed] = React.useState<boolean>(false);
 
@@ -30,7 +33,7 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
                 data-testid="sidebar-toggle"
                 onClick={onToggle}
             >
-                toggle
+                {t('Переключить')}
             </Button>
         </div>
     );
