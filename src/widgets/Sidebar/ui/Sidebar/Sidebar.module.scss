@@ -2,10 +2,70 @@
     position: relative;
     height: calc(100vh - var(--navbar-height));
     width: var(--sidebar-width);
+    padding: 20px;
     background-color: var(--inverted-bg-color);
     transition: width 300ms ease-out;
 }
 
+.collapseButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+}
+
 .collapsed {
     width: var(--sidebar-width-collapsed);
+
+    .collapseLabel {
+        display: block;
+        transform: scaleX(-1);
+    }
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.navLink {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    min-height: var(--font-line-m);
+}
+
+.iconContainer {
+    width: 20px;
+    height: 20px;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    fill: currentcolor;
+}
+
+.linkText {
+    overflow: hidden;
+    height: var(--font-line-m);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    opacity: 1;
+    scale: 1;
+    transition:
+        opacity 0.2s 0.3s,
+        transform 0.2s 0.3s;
+
+    &.hidden {
+        opacity: 0;
+        scale: 0;
+        transition:
+            opacity 0.3s,
+            transform 0.3s;
+    }
 }
