@@ -15,15 +15,15 @@ export default {
     // The directory where Jest should store its cached dependency information
     // cacheDirectory: "C:\\Users\\meatrue\\AppData\\Local\\Temp\\jest",
 
-    // Automatically clear mock calls, instances and results before every test
+    globals: {
+        __IS_DEV__: true,
+    },
     clearMocks: true,
-    // The test environment that will be used for testing
     testEnvironment: 'jsdom',
-    // An array of regexp pattern strings used to skip coverage collection
+
     coveragePathIgnorePatterns: [
         '\\\\node_modules\\\\',
     ],
-    // An array of file extensions your modules use
     moduleFileExtensions: [
         'js',
         'jsx',
@@ -32,7 +32,6 @@ export default {
         'json',
         'node',
     ],
-    // An array of directory names to be searched recursively up from the requiring module's location
     moduleDirectories: [
         'node_modules',
     ],
@@ -88,9 +87,6 @@ export default {
 
     // A path to a module which exports an async function that is triggered once after all test suites
     // globalTeardown: undefined,
-
-    // A set of global variables that need to be available in all test environments
-    // globals: {},
 
     // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
     // maxWorkers: "50%",
