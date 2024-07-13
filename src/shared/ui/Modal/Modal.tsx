@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { classNames } from 'shared/lib';
+import { classNames, useTheme } from 'shared/lib';
 import { Portal } from 'shared/ui';
 
 import cls from './Modal.module.scss';
@@ -58,7 +58,10 @@ export const Modal: React.FC<ModalProps> = (props) => {
 
     return (
         <Portal>
-            <div className={classNames(cls.Modal, mods, [className])} data-modal>
+            <div
+                className={classNames(cls.Modal, mods, [className])}
+                data-modal
+            >
                 <div className={cls.overlay} onClick={closeHandler} />
                 <div className={cls.content}>
                     {children}
