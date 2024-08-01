@@ -1,0 +1,25 @@
+.InputWrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    input {
+        flex-grow: 1;
+        padding: 5px;
+        font: var(--font-m);
+        color: var(--secondary-color);
+        background-color: rgb(255 255 255 / 30%);
+        outline: none;
+        border: 1px solid var(--secondary-color);
+        transition: border-color 0.3s ease-out;
+
+        &:hover {
+            border-color: var(--primary-color);
+        }
+    }
+}
+
+.labelText {
+    font: var(--font-m);
+    color: var(--primary-color);
+}
