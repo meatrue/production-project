@@ -29,6 +29,7 @@
     max-width: 60%;
     min-height: 200px;
     max-height: 60%;
+    overflow: auto;
     background-color: var(--bg-color);
     border-radius: 12px;
     transform: translate(50%, 50%) scale(0.5);

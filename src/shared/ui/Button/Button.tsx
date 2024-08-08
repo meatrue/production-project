@@ -32,6 +32,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
         square,
         className,
         children,
+        disabled,
         ...otherProps
     } = props;
 
@@ -42,7 +43,10 @@ export const Button: React.FC<ButtonProps> = (props) => {
             type="button"
             className={classNames(
                 cls.Button,
-                { [cls.square]: square },
+                {
+                    [cls.square]: square,
+                    [cls.disabled]: disabled,
+                },
                 [className, cls[theme], cls[buttonSize]],
             )}
             {...otherProps}

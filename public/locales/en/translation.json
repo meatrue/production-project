@@ -7,7 +7,10 @@
     "Обновить страницу": "Reload the page",
     "Бросить ошибку": "Throw error",
     "Переключить": "toggle",
-    "Войти": "Enter",
+    "Войти": "Login",
     "Введите логин": "Enter login",
-    "Введите пароль": "enter password"
+    "Введите пароль": "Enter password",
+    "Форма авторизации": "Authorization form",
+    "Вы ввели неверный логин или пароль": "Incorrect login or password",
+    "Выйти": "Logout"
 }

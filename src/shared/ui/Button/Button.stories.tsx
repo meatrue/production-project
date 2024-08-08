@@ -14,27 +14,27 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
     },
 };
 
 export const PrimaryL: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         size: ButtonSize.L,
     },
 };
 
 export const PrimaryXL: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         size: ButtonSize.XL,
     },
 };
 
 export const PrimaryDark: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
     },
 };
 
@@ -42,14 +42,14 @@ PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const Clear: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.CLEAR,
     },
 };
 
 export const ClearDark: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.CLEAR,
     },
 };
@@ -58,14 +58,14 @@ ClearDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const ClearInverted: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.CLEAR_INVERTED,
     },
 };
 
 export const ClearInvertedDark: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.CLEAR_INVERTED,
     },
 };
@@ -74,14 +74,14 @@ ClearInvertedDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const Outlined: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.OUTLINED,
     },
 };
 
 export const OutlinedL: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.OUTLINED,
         size: ButtonSize.L,
     },
@@ -89,7 +89,7 @@ export const OutlinedL: Story = {
 
 export const OutlinedXL: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.OUTLINED,
         size: ButtonSize.XL,
     },
@@ -97,7 +97,7 @@ export const OutlinedXL: Story = {
 
 export const OutlinedDark: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.OUTLINED,
     },
 };
@@ -106,14 +106,14 @@ OutlinedDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const Background: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.BACKGROUND,
     },
 };
 
 export const InvertedBackground: Story = {
     args: {
-        children: 'Текст',
+        children: 'Кнопка',
         theme: ButtonTheme.BACKGROUND_INVERTED,
     },
 };
@@ -141,5 +141,13 @@ export const SquareSizeXL: Story = {
         square: true,
         size: ButtonSize.XL,
         theme: ButtonTheme.BACKGROUND_INVERTED,
+    },
+};
+
+export const Disabled: Story = {
+    args: {
+        children: 'Кнопка',
+        theme: ButtonTheme.OUTLINED,
+        disabled: true,
     },
 };
